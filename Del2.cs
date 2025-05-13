@@ -57,7 +57,7 @@ class Part2
 
         var categories = File
             .ReadAllLines(path)
-            .Skip(1)  // skip header
+            .Skip(1)  // skipper header
             .Select(line =>
             {
                 var columns = line.Split(';');
@@ -78,7 +78,7 @@ class Part2
             .GroupBy(b => b)
             .ToDictionary(g => g.Key, g => g.Count());
 
-        // Print
+        // Printer
         Console.WriteLine("\n\nAnsatte\t\tAntall");
         foreach (var kv in tally.OrderBy(kv => kv.Key))
         {
