@@ -1,0 +1,23 @@
+# Build output
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# VS/IDE user files
+*.user
+*.suo
+*.userosscache
+*.vsscc
+
+# Rider
+.idea/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# NuGet
+*.nupkg
+packages/
